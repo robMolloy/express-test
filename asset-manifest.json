@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/robMolloy.github.io/express-test/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/robMolloy.github.io/express-test/static/js/main.bb6308a9.chunk.js",
+    "main.js.map": "/robMolloy.github.io/express-test/static/js/main.bb6308a9.chunk.js.map",
+    "runtime-main.js": "/robMolloy.github.io/express-test/static/js/runtime-main.c0ab3ddf.js",
+    "runtime-main.js.map": "/robMolloy.github.io/express-test/static/js/runtime-main.c0ab3ddf.js.map",
+    "static/js/2.fe54cb52.chunk.js": "/robMolloy.github.io/express-test/static/js/2.fe54cb52.chunk.js",
+    "static/js/2.fe54cb52.chunk.js.map": "/robMolloy.github.io/express-test/static/js/2.fe54cb52.chunk.js.map",
+    "static/js/3.f376bcbb.chunk.js": "/robMolloy.github.io/express-test/static/js/3.f376bcbb.chunk.js",
+    "static/js/3.f376bcbb.chunk.js.map": "/robMolloy.github.io/express-test/static/js/3.f376bcbb.chunk.js.map",
+    "index.html": "/robMolloy.github.io/express-test/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/robMolloy.github.io/express-test/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.fe54cb52.chunk.js.LICENSE.txt": "/robMolloy.github.io/express-test/static/js/2.fe54cb52.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c0ab3ddf.js",
+    "static/js/2.fe54cb52.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.bb6308a9.chunk.js"
+  ]
+}
