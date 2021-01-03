@@ -7,7 +7,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import Container from "../../generic/containers/Container";
 
 const useStyles = makeStyles((theme) => ({
-  root: { flexGrow: 1 },
+  root: { flexGrow: 1, textAlign: "center" },
   appbar: {
     backgroundColor: "#FFFFFF",
     color: "#000000",

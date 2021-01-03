@@ -5,13 +5,18 @@ import App from "./App";
 import theme from "./theme";
 import { ThemeProvider } from "@material-ui/core/styles";
 import reportWebVitals from "./reportWebVitals";
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+
+// import {servi} from "webpack/";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <>
+    {/* <React.StrictMode> */}
     <ThemeProvider theme={theme}>
       <App />
     </ThemeProvider>
-  </React.StrictMode>,
+    {/* </React.StrictMode>, */}
+  </>,
   document.getElementById("root")
 );
 
@@ -19,3 +24,8 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://cra.link/PWA
+serviceWorkerRegistration.unregister();

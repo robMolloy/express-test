@@ -5,6 +5,7 @@ import MUIContainer from "@material-ui/core/Container";
 const useStyles = makeStyles((theme) => {
   return {
     root: {
+      // textAlign: "center",
       // maxWidth: "720px",
     },
   };

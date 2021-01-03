@@ -6,6 +6,8 @@ import Container from "../../generic/containers/Container";
 import SectionDarkBg from "../../generic/sections/SectionDarkBg";
 
 import Text from "../../generic/text/Text";
+import ButtonPrimary from "../../generic/buttons/ButtonPrimary";
+import ButtonSecondary from "../../generic/buttons/ButtonSecondary";
 
 const AccurateAndAffordable = () => {
   return (
@@ -38,7 +40,8 @@ const AccurateAndAffordable = () => {
                 UK Testing Facilities | Testing for only £99
                 <br />
                 <br />
-                Book a Test Now How it Works
+                <ButtonSecondary>Book a Test Now</ButtonSecondary>
+                <ButtonPrimary>How it Works</ButtonPrimary>
                 <br />
                 <br />
                 We have sites across the UK, with more to open soon.

@@ -4,17 +4,21 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => {
   return {
-    // box: { padding: theme.spacing(2) },
+    root: {
+      // padding: theme.spacing(2)
+    },
   };
 });
 
 const GridItem = (props = {}) => {
+  // console.log(props);
+
   let children, className;
   ({ children, className = "", ...props } = props);
   const classes = useStyles();
 
   return (
-    <MUIGrid item className={`${className} ${classes.root ?? ""}`} {...props}>
+    <MUIGrid item className={`${className} ${classes.root}`} {...props}>
       {children}
     </MUIGrid>
   );

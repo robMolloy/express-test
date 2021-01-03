@@ -9,6 +9,7 @@ import TestCentres from "./components/pages/TestCentres";
 
 import Toolbar from "./components/tailored/bars/Toolbar";
 import FooterBar from "./components/tailored/bars/FooterBar";
+import Faqs from "./components/pages/Faqs";
 
 function App() {
   let HomePage;
@@ -18,18 +19,13 @@ function App() {
     <Router>
       <div className="App">
         <Toolbar />
-        <Route exact path="" component={HomePage} />
+        <Route exact path="/" component={HomePage} />
         <Route exact path="/home" component={Home} />
-        <Route exact path="about" component={About} />
-        <Route exact path="how_it_works" component={HowItWorks} />
-        {/*
-        <Route path="/expressTest" component={HowItWorks} />
-        <Route path="expressTest/" component={HowItWorks} />
-        <Route path="expressTest" component={HowItWorks} />
-        <Route path="/expressTest/" component={HowItWorks} /> 
-        */}
+        <Route exact path="/about" component={About} />
+        <Route exact path="/how_it_works" component={HowItWorks} />
         <Route exact path="/news" component={Blogs} />
         <Route exact path="/test_centres" component={TestCentres} />
+        <Route exact path="/faqs" component={Faqs} />
         <FooterBar />
       </div>
     </Router>
