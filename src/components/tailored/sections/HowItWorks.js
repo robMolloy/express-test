@@ -5,8 +5,8 @@ import GridColumnToRow from "../../generic/grids/GridColumnToRow";
 import Container from "../../generic/containers/Container";
 import SectionDarkBg from "../../generic/sections/SectionDarkBg";
 import SectionLightBg from "../../generic/sections/SectionLightBg";
-
 import Text from "../../generic/text/Text";
+import Title from "../../generic/text/Title";
 
 const HowItWorks = (props = {}) => {
   let dark, intro;
@@ -17,15 +17,17 @@ const HowItWorks = (props = {}) => {
     <Component>
       {intro && (
         <>
-          <h1>How It Works</h1>
-          <p>
+          <Title size="0" align="center">
+            How It Works
+          </Title>
+          <Text align="center">
             ExpressTest offers two COVID-19 testing solutions. Either, travel to
             one of our screening centres, or have the test sent to your home and
             administer it yourself. Choose the type of test you’d like below.
             <br />
             <br />
             Screening Facilities Home Testing Kits
-          </p>
+          </Text>
           <br />
         </>
       )}
@@ -36,7 +38,7 @@ const HowItWorks = (props = {}) => {
           array={[
             <img src="/media/cg_howitworks_point1.png" alt="" />,
             <div>
-              <h1>Booking Your Test</h1>
+              <Title size="0">Booking Your Test</Title>
               <Text>
                 We now have sites across the UK.
                 <br />
@@ -51,7 +53,7 @@ const HowItWorks = (props = {}) => {
           alignItems="center"
           array={[
             <div>
-              <h1>Arriving For Your Test</h1>
+              <Title size="0">Arriving For Your Test</Title>
               <Text>
                 Arrive at the drive-through screening facility 15 minutes before
                 your allotted time slot. You must bring photo ID with you.
@@ -75,7 +77,7 @@ const HowItWorks = (props = {}) => {
           array={[
             <img src="/media/cg_howitworks_point3.png" alt="" />,
             <div>
-              <h1>Our Testing Process</h1>
+              <Title size="0">Our Testing Process</Title>
               <Text>
                 Anyone who has registered for a test will then be safely swabbed
                 by one of our sample takers in full PPE.
@@ -96,7 +98,7 @@ const HowItWorks = (props = {}) => {
           alignItems="center"
           array={[
             <div>
-              <h1>After The Test</h1>
+              <Title size="0">After The Test</Title>
               <Text>
                 Your sample will then be transported to our laboratory, where it
                 will be tested for COVID-19. See our{" "}
@@ -123,7 +125,7 @@ const HowItWorks = (props = {}) => {
           array={[
             <img src="/media/cg_howitworks_point5.png" alt="" />,
             <div>
-              <h1>Your Results</h1>
+              <Title size="0">Your Results</Title>
               <Text>
                 If your result is negative, you will receive email confirmation
                 of this. You will also receive a ‘Fit to Fly’ certificate if you

@@ -4,7 +4,9 @@ import GridColumnToRow from "../../generic/grids/GridColumnToRow";
 
 import Container from "../../generic/containers/Container";
 import SectionDarkBg from "../../generic/sections/SectionDarkBg";
+import ButtonRow from "../../generic/grids/ButtonRow";
 
+import Title from "../../generic/text/Title";
 import Text from "../../generic/text/Text";
 import ButtonPrimary from "../../generic/buttons/ButtonPrimary";
 import ButtonSecondary from "../../generic/buttons/ButtonSecondary";
@@ -17,11 +19,11 @@ const AccurateAndAffordable = () => {
           alignItems="center"
           array={[
             <>
-              <h1>
+              <Title size="0">
                 Accurate and Affordable
                 <br />
                 COVID-19 Testing in the UK
-              </h1>
+              </Title>
 
               <Text>
                 ExpressTest is a COVID-19 testing service providing fast,
@@ -40,9 +42,14 @@ const AccurateAndAffordable = () => {
                 UK Testing Facilities | Testing for only £99
                 <br />
                 <br />
-                <ButtonSecondary>Book a Test Now</ButtonSecondary>
-                <ButtonPrimary>How it Works</ButtonPrimary>
-                <br />
+              </Text>
+              <ButtonRow
+                array={[
+                  <ButtonSecondary>Book a Test Now</ButtonSecondary>,
+                  <ButtonPrimary>How it Works</ButtonPrimary>,
+                ]}
+              />
+              <Text>
                 <br />
                 We have sites across the UK, with more to open soon.
               </Text>

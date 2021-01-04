@@ -1,19 +1,21 @@
 import React from "react";
 import SectionLightBg from "../../generic/sections/SectionLightBg";
 import Container from "../../generic/containers/Container";
+import Title from "../../generic/text/Title";
+import Text from "../../generic/text/Text";
 
 const FAQBanner = () => {
   return (
     <SectionLightBg>
       <Container>
         <br />
-        <h2>Frequently Asked Questions</h2>
+        <Title size="1">Frequently Asked Questions</Title>
         <br />
-        <h3>Want to know more?</h3>
-        <p>
+        <Title size="2">Want to know more?</Title>
+        <Text align="center">
           <a href="./">Click here</a> for an extensive list of FAQs, or get in
           touch.
-        </p>
+        </Text>
         <br />
         <br />
       </Container>

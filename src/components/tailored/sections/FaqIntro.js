@@ -4,7 +4,7 @@ import SectionGrey from "../../generic/sections/SectionGrey";
 const FaqIntro = () => {
   return (
     <SectionGrey>
-      <h1>Frequently Asked Questions</h1>
+      <Title size="0">Frequently Asked Questions</Title>
       Browse our frequently asked questions
     </SectionGrey>
   );

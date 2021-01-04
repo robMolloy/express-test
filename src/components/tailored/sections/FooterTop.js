@@ -5,6 +5,7 @@ import GridColumnToRow from "../../generic/grids/GridColumnToRow";
 import LightAnchor from "../../generic/anchors/LightAnchor";
 import Button from "../../generic/buttons/ButtonPrimary";
 import Container from "../../generic/containers/Container";
+import Title from "../../generic/text/Title";
 
 import SectionBlockColor from "../../generic/sections/SectionBlockColor";
 
@@ -16,7 +17,7 @@ const FooterTop = () => {
         <GridColumnToRow
           array={[
             <>
-              <h2>Explore</h2>
+              <Title size="1">Explore</Title>
               <LightAnchor href="./">Home</LightAnchor>
               <br />
               <LightAnchor href="./">About</LightAnchor>
@@ -26,11 +27,11 @@ const FooterTop = () => {
               <LightAnchor href="./">News & Blogs</LightAnchor>
             </>,
             <>
-              <h2>Book A Test</h2>
+              <Title size="1">Book A Test</Title>
               <LightAnchor>Testing Centres</LightAnchor>
             </>,
             <>
-              <h2>Customer Care</h2>
+              <Title size="1">Customer Care</Title>
               <LightAnchor> Help & FAQs</LightAnchor>
               <br />
               <LightAnchor> Privacy Policy</LightAnchor>
@@ -38,7 +39,7 @@ const FooterTop = () => {
               <LightAnchor> Terms & Conditions</LightAnchor>
             </>,
             <>
-              <h2>Have a question for us?</h2>
+              <Title size="1">Have a question for us?</Title>
               <Button>Contact Us</Button>
             </>,
           ]}

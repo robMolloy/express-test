@@ -1,13 +1,27 @@
 import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
 
 const Title = (props = {}) => {
-  let children, size;
-  ({ children, size = 0 } = props);
+  let children, size, className, align, marginBottom;
+  ({
+    children,
+    size = 0,
+    className = "",
+    align = "left",
+    marginBottom = 0,
+    ...props
+  } = props);
 
-  let ComponentOptions = { 0: "h1", 1: "h2", 2: "h4" };
+  let ComponentOptions = ["h1", "h2", "h4"];
   let Component = ComponentOptions[size];
 
-  return <Component>{children}</Component>;
+  const classes = makeStyles((theme) => ({
+    root: { textAlign: align, marginBottom: theme.spacing(marginBottom) },
+  }))();
+
+  return (
+    <Component className={`${className} ${classes.root}`}>{children}</Component>
+  );
 };
 
 export default Title;

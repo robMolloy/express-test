@@ -20,7 +20,9 @@ const Header = (props = {}) => {
       <SectionDarkBg className={classes.root}>
         <Container>
           <br />
-          <h1 className={classes.title}>{children}</h1>
+          <Title size="0" className={classes.title}>
+            {children}
+          </Title>
           <br />
         </Container>
       </SectionDarkBg>

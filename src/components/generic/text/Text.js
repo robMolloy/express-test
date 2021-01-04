@@ -1,19 +1,13 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles((theme) => {
-  return {
-    root: {
-      // textAlign: "left",
-    },
-  };
-});
-
 const Text = (props = {}) => {
-  let children, className;
-  ({ children, className, ...props } = props);
+  let children, className, align;
+  ({ children, className = "", align = "left", ...props } = props);
 
-  const classes = useStyles();
+  const classes = makeStyles((theme) => ({
+    root: { textAlign: align },
+  }))();
 
   return (
     <p className={`${className} ${classes.root}`} {...props}>

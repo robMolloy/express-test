@@ -1,13 +1,14 @@
 import React from "react";
 import SectionLightBg from "../../generic/sections/SectionLightBg";
 import Container from "../../generic/containers/Container";
+import Text from "../../generic/text/Text";
 
 const TestCentreIntro = () => {
   return (
     <SectionLightBg>
       <Container>
-        <h2>Book Your COVID-19 Screening</h2>
-        <p>
+        <Title size="1">Book Your COVID-19 Screening</Title>
+        <Text align="center">
           We now have sites accross the UK.
           <br />
           You will be sent a confirmation email with a QR code.
@@ -26,7 +27,7 @@ const TestCentreIntro = () => {
           If you require a Fit to Fly certificate to travel to another country,
           you will require passport/national ID card and flight details for all
           travellers to complete this booking.
-        </p>
+        </Text>
       </Container>
     </SectionLightBg>
   );

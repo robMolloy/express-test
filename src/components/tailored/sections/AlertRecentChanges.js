@@ -1,12 +1,13 @@
 import React from "react";
 
 import SectionAlert from "../../generic/sections/SectionAlert";
+import Text from "../../generic/text/Text";
 
 const AlertRecentChanges = () => {
   return (
     <SectionAlert>
       <div>
-        <p>
+        <Text align="center">
           If you have been impacted by the recent Government changes to Covid
           restrictions and wish to cancel your booked test, please follow this
           link:{" "}
@@ -20,7 +21,7 @@ const AlertRecentChanges = () => {
           <br />
           <br />
           Thank you for choosing ExpressTest.
-        </p>
+        </Text>
       </div>
     </SectionAlert>
   );

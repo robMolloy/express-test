@@ -10,7 +10,7 @@ const WhyChooseUsAbridged = () => {
   return (
     <SectionDarkBg>
       <Container>
-        <h1>Why Choose Us?</h1>
+        <Title size="0">Why Choose Us?</Title>
         <GridColumnToRow
           alignItems="center"
           array={[
@@ -18,7 +18,7 @@ const WhyChooseUsAbridged = () => {
               <img src="media/cg_about_step1.png" alt="" />
             </>,
             <>
-              <h1>Fast and Affordable</h1>
+              <Title size="0">Fast and Affordable</Title>
               <Text>
                 By leveraging our established network of regional laboratories,
                 it means we can get your results back to you quicker. We will
@@ -32,7 +32,7 @@ const WhyChooseUsAbridged = () => {
           alignItems="center"
           array={[
             <>
-              <h1>PPE and Safety</h1>
+              <Title size="0">PPE and Safety</Title>
               <Text>
                 At our testing facilities, your swab will be taken by one of
                 clinically trained sample takers. Our sample takers are all
@@ -52,7 +52,7 @@ const WhyChooseUsAbridged = () => {
               <img src="media/cg_about_step3.png" alt="" />
             </>,
             <>
-              <h1>Trusted Testing</h1>
+              <Title size="0">Trusted Testing</Title>
               <Text>
                 We use PCR testing machines, the gold standard for COVID-19
                 screening. All our devices are CE-IVD approved, so conform to
@@ -65,7 +65,7 @@ const WhyChooseUsAbridged = () => {
           alignItems="center"
           array={[
             <>
-              <h1>Reliable Results</h1>
+              <Title size="0">Reliable Results</Title>
               <Text>
                 Our PCR machines are highly sensitive so can detect even the
                 lowest levels of virus. This means that a negative test result
@@ -85,7 +85,7 @@ const WhyChooseUsAbridged = () => {
               <img src="media/cg_about_step5.png" alt="" />
             </>,
             <>
-              <h1>Our Testing Experience</h1>
+              <Title size="0">Our Testing Experience</Title>
               <Text>
                 ExpressTest is a programme run by the direct to consumer
                 division of Cignpost Diagnostics Limited who are providing

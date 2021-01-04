@@ -15,10 +15,10 @@ const AboutIntro = () => {
           alignItems="center"
           array={[
             <>
-              <h1>
+              <Title size="0">
                 ExpressTest provides fast, accurate and reliable COVID-19
                 testing solutions across the UK.
-              </h1>
+              </Title>
               <Text>
                 ExpressTest is a programme that is run by the direct to consumer
                 division of Cignpost Diagnostics Limited.

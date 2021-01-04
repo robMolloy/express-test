@@ -7,8 +7,8 @@ import HowItWorks from "./components/pages/HowItWorks";
 import Blogs from "./components/pages/Blogs";
 import TestCentres from "./components/pages/TestCentres";
 
-import Toolbar from "./components/tailored/bars/Toolbar";
 import FooterBar from "./components/tailored/bars/FooterBar";
+import NavBars from "./components/tailored/bars/NavBars";
 import Faqs from "./components/pages/Faqs";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Toolbar />
+        <NavBars />
         <Route exact path="/" component={HomePage} />
         <Route exact path="/home" component={Home} />
         <Route exact path="/about" component={About} />

@@ -28,7 +28,9 @@ const BookingBox = (props = {}) => {
   return (
     <div className={`${className} ${classes.root}`}>
       <div className={classes.container}>
-        <h2 className={classes.heading}>{children}</h2>
+        <Title size="1" className={classes.heading}>
+          {children}
+        </Title>
         <div>
           <Button>Book Now</Button>
         </div>

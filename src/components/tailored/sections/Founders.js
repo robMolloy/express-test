@@ -13,7 +13,7 @@ const Founders = () => {
         <GridColumnToRow
           array={[
             <Tablet imgSrc="media/about_founder1.png">
-              <h1>Denis Kinane</h1>
+              <Title size="0">Denis Kinane</Title>
               <Text>
                 Founder and Chief Medical Officer
                 <br />
@@ -29,7 +29,7 @@ const Founders = () => {
               </Text>
             </Tablet>,
             <Tablet imgSrc="media/about_founder2.png">
-              <h1>Steve Whatley</h1>
+              <Title size="0">Steve Whatley</Title>
               <Text>
                 Founder
                 <br />
@@ -45,7 +45,7 @@ const Founders = () => {
               </Text>
             </Tablet>,
             <Tablet imgSrc="media/about_founder3.png">
-              <h1>Nick Markham</h1>
+              <Title size="0">Nick Markham</Title>
               <Text>
                 Founder
                 <br />
