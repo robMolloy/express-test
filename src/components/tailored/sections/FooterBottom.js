@@ -13,18 +13,18 @@ const FooterBottom = () => {
       <Container>
         <GridColumnToRow
           array={[
-            <>
+            <div style={{ textAlign: "center" }}>
               <small>
                 © 2020 ExpressTest - All Rights Reserved. Design by Mooch.
               </small>
-            </>,
-            <>
+            </div>,
+            <div style={{ textAlign: "center" }}>
               <img
                 src="media/AllowMe-PoweredByRFID-logo-white-2018.png"
                 alt=""
                 style={{ maxHeight: theme.spacing(5) }}
               />
-            </>,
+            </div>,
             <>
               <img
                 src="media/payment-01.svg"

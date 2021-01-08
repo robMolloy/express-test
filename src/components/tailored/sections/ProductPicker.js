@@ -7,6 +7,8 @@ import ButtonPrimary from "../../generic/buttons/ButtonPrimary";
 import Container from "../../generic/containers/Container";
 import GridContainer from "../../generic/grids/GridContainer";
 import GridItem from "../../generic/grids/GridItem";
+import Text from "../../generic/text/Text";
+import ButtonRow from "../../generic/grids/ButtonRow";
 
 const ProductPicker = () => {
   const [state, setState] = React.useState(0);
@@ -18,7 +20,7 @@ const ProductPicker = () => {
           <GridItem>
             <Button
               onClick={() => setState(0)}
-              color={state === 0 ? "primary" : ""}
+              color={state === 0 ? "primary" : "default"}
             >
               Screening Facilities
             </Button>
@@ -26,7 +28,7 @@ const ProductPicker = () => {
           <GridItem>
             <Button
               onClick={() => setState(1)}
-              color={state === 1 ? "primary" : ""}
+              color={state === 1 ? "primary" : "default"}
             >
               Home Testing Kits
             </Button>
@@ -34,24 +36,29 @@ const ProductPicker = () => {
           <GridItem>
             <Button
               onClick={() => setState(2)}
-              color={state === 2 ? "primary" : ""}
+              color={state === 2 ? "primary" : "default"}
             >
               Test To Release
             </Button>
           </GridItem>
         </GridContainer>
         <br />
-        {state === 0 && <></>}
-        {state === 1 && <b>Home testing kits are coming soon</b>}
-
+        <Text align="center">
+          <b>
+            {state === 0 && <></>}
+            {state === 1 && <>Home testing kits are coming soon </>}
+            {state === 2 && <>Test to release programme coming soon.</>}
+          </b>
+        </Text>
         {state === 2 && (
           <>
-            <b>Test to release programme coming soon.</b>
-            <br />
-            <br />
-            <ButtonPrimary>
-              Register Your Interest In Test To Release
-            </ButtonPrimary>
+            <ButtonRow
+              array={[
+                <ButtonPrimary>
+                  Register Your Interest In Test To Release
+                </ButtonPrimary>,
+              ]}
+            />
           </>
         )}
       </Container>

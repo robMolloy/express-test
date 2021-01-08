@@ -2,12 +2,15 @@ import React from "react";
 import SectionLightBg from "../../generic/sections/SectionLightBg";
 import Container from "../../generic/containers/Container";
 import Text from "../../generic/text/Text";
+import Title from "../../generic/text/Title";
 
 const TestCentreIntro = () => {
   return (
     <SectionLightBg>
       <Container>
-        <Title size="1">Book Your COVID-19 Screening</Title>
+        <Title align="center" size="1">
+          Book Your COVID-19 Screening
+        </Title>
         <Text align="center">
           We now have sites accross the UK.
           <br />

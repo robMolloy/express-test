@@ -3,6 +3,7 @@ import SectionAlert from "../../generic/sections/SectionAlert";
 import SectionDarkBg from "../../generic/sections/SectionDarkBg";
 import makeStyles from "@material-ui/styles/makeStyles";
 import Container from "../../generic/containers/Container";
+import Title from "../../generic/text/Title";
 
 const useStyles = makeStyles((theme) => ({
   root: { textAlign: "left" },

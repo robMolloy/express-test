@@ -9,13 +9,14 @@ const useStyles = makeStyles((theme) => {
 });
 
 const Button = (props = {}) => {
-  let children, className;
-  ({ children, className = "", ...props } = props);
+  let children, className, color;
+  ({ children, className = "", color = "default", ...props } = props);
   const classes = useStyles();
 
   return (
     <MUIButton
       variant="contained"
+      color={color}
       className={`${classes.root} ${className}`}
       {...props}
     >

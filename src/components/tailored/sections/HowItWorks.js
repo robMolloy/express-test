@@ -36,7 +36,7 @@ const HowItWorks = (props = {}) => {
           wrap="wrap-reverse"
           alignItems="center"
           array={[
-            <img src="/media/cg_howitworks_point1.png" alt="" />,
+            <img src="media/cg_howitworks_point1.png" alt="" />,
             <div>
               <Title size="0">Booking Your Test</Title>
               <Text>
@@ -68,14 +68,14 @@ const HowItWorks = (props = {}) => {
                 want a Fit to Fly certificate.
               </Text>
             </div>,
-            <img src="/media/cg_howitworks_point2.png" alt="" />,
+            <img src="media/cg_howitworks_point2.png" alt="" />,
           ]}
         />
         <GridColumnToRow
           wrap="wrap-reverse"
           alignItems="center"
           array={[
-            <img src="/media/cg_howitworks_point3.png" alt="" />,
+            <img src="media/cg_howitworks_point3.png" alt="" />,
             <div>
               <Title size="0">Our Testing Process</Title>
               <Text>
@@ -116,14 +116,14 @@ const HowItWorks = (props = {}) => {
                 travel, that may require your results by a certain time.
               </Text>
             </div>,
-            <img src="/media/cg_howitworks_point4.png" alt="" />,
+            <img src="media/cg_howitworks_point4.png" alt="" />,
           ]}
         />
         <GridColumnToRow
           wrap="wrap-reverse"
           alignItems="center"
           array={[
-            <img src="/media/cg_howitworks_point5.png" alt="" />,
+            <img src="media/cg_howitworks_point5.png" alt="" />,
             <div>
               <Title size="0">Your Results</Title>
               <Text>

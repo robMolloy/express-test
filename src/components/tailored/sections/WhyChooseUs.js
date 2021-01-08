@@ -5,6 +5,7 @@ import SectionDarkBg from "../../generic/sections/SectionDarkBg";
 import GridColumnToRow from "../../generic/grids/GridColumnToRow";
 
 import Text from "../../generic/text/Text";
+import Title from "../../generic/text/Title";
 
 const WhyChooseUsAbridged = () => {
   return (

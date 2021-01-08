@@ -8,6 +8,7 @@ import Container from "../../generic/containers/Container";
 import Title from "../../generic/text/Title";
 
 import SectionBlockColor from "../../generic/sections/SectionBlockColor";
+import ButtonRow from "../../generic/grids/ButtonRow";
 
 const FooterTop = () => {
   const theme = useTheme();
@@ -15,15 +16,16 @@ const FooterTop = () => {
     <SectionBlockColor bg={theme.palette.secondary.main} color="#FFFFFF">
       <Container>
         <GridColumnToRow
+          // className="text-center-xs"
           array={[
             <>
               <Title size="1">Explore</Title>
               <LightAnchor href="./">Home</LightAnchor>
-              <br />
+
               <LightAnchor href="./">About</LightAnchor>
-              <br />
+
               <LightAnchor href="./">How It Works</LightAnchor>
-              <br />
+
               <LightAnchor href="./">News & Blogs</LightAnchor>
             </>,
             <>
@@ -33,14 +35,14 @@ const FooterTop = () => {
             <>
               <Title size="1">Customer Care</Title>
               <LightAnchor> Help & FAQs</LightAnchor>
-              <br />
+
               <LightAnchor> Privacy Policy</LightAnchor>
-              <br />
+
               <LightAnchor> Terms & Conditions</LightAnchor>
             </>,
             <>
               <Title size="1">Have a question for us?</Title>
-              <Button>Contact Us</Button>
+              <ButtonRow array={[<Button>Contact Us</Button>]} />
             </>,
           ]}
         />

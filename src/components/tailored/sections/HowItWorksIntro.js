@@ -7,6 +7,7 @@ import React from "react";
 import SectionLightBg from "../../generic/sections/SectionLightBg";
 import Container from "../../generic/containers/Container";
 import Text from "../../generic/text/Text";
+import Title from "../../generic/text/Title";
 
 const HowItWorksIntro = () => {
   return (

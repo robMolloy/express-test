@@ -144,6 +144,8 @@ const FaqsOtherQuestions = () => {
             </Accordion>
           </GridItem>
         </GridContainer>
+        <br />
+        <br />
       </Container>
     </SectionLightBg>
   );

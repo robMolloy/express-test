@@ -1,11 +1,14 @@
 import React from "react";
 
 import ButtonPrimary from "../../generic/buttons/ButtonPrimary";
+import ButtonSecondary from "../../generic/buttons/ButtonSecondary";
 
 import GridColumnToRow from "../../generic/grids/GridColumnToRow";
 import SectionLightBg from "../../generic/sections/SectionLightBg";
 import Container from "../../generic/containers/Container";
 import Text from "../../generic/text/Text";
+import Title from "../../generic/text/Title";
+import ButtonRow from "../../generic/grids/ButtonRow";
 
 const AboutIntro = () => {
   return (
@@ -29,10 +32,14 @@ const AboutIntro = () => {
                 COVID-19 testing to media and corporate clients, such as
                 Netflix, the BBC, Amazon and the PGA European Tour.
               </Text>
-              <div>
-                <ButtonPrimary>About Cignpost Diagnostics</ButtonPrimary>
-                <ButtonPrimary>How it Works</ButtonPrimary>
-              </div>
+              <br />
+              <ButtonRow
+                array={[
+                  <ButtonSecondary>About Cignpost Diagnostics</ButtonSecondary>,
+                  <ButtonPrimary>How it Works</ButtonPrimary>,
+                ]}
+              />
+              <br />
             </>,
             <>
               <img src="media/new_about_image.jpg" alt="" />

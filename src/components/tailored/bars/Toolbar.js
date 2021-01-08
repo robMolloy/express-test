@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/styles";
 import AppBar from "@material-ui/core/AppBar";
 import MUIToolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
@@ -15,8 +15,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   menuButton: {
-    color: theme.palette.grey[400],
-    border: `solid 1px ${theme.palette.grey[400]}`,
+    color: theme.palette.grey.main,
+    border: `solid 1px ${theme.palette.grey.main}`,
     borderRadius: "4px",
     padding: "4px 8px",
     position: "absolute",

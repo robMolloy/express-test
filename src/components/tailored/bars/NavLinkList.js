@@ -11,7 +11,7 @@ const NavLinkList = (props = {}) => {
   return (
     <MUIList>
       {array.map((listItem, j) => (
-        <ListItem key={j}>{listItem.name}</ListItem>
+        <ListItem key={j} item={listItem} />
       ))}
     </MUIList>
   );

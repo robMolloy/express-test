@@ -1,6 +1,7 @@
 import React from "react";
 import makeStyles from "@material-ui/styles/makeStyles";
 import Button from "../../generic/buttons/ButtonSecondary";
+import Title from "../../generic/text/Title";
 
 const useStyles = makeStyles((theme) => ({
   root: {

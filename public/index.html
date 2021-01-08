@@ -14,7 +14,7 @@
     <style>
       @font-face {
         font-family: "sofia-pro";
-        src: url("fonts/SofiaProRegular.otf") format("opentype");
+        src: url("%PUBLIC_URL%/fonts/SofiaProRegular.otf") format("opentype");
         font-display: auto;
         font-style: normal;
         font-weight: 400;
@@ -22,7 +22,8 @@
 
       @font-face {
         font-family: "sofia-pro";
-        src: url("fonts/SofiaProLightItalic.otf") format("opentype");
+        src: url("%PUBLIC_URL%/fonts/SofiaProLightItalic.otf")
+          format("opentype");
         font-display: auto;
         font-style: italic;
         font-weight: 300;
@@ -36,7 +37,8 @@
       }
 
       body {
-        /* overflow-y: overflow; */
+        overflow-y: auto;
+        /* background-color: #272c34; */
       }
 
       a {
@@ -44,7 +46,6 @@
       }
 
       a:hover {
-        text-decoration: underline;
         cursor: pointer;
       }
 
@@ -83,6 +84,12 @@
       .spacing-y-0.MuiGrid-container > .MuiGrid-item {
         padding-top: 0;
         padding-bottom: 0;
+      }
+
+      @media screen and (max-width: 600px) {
+        *.text-center-xs {
+          text-align: center !important;
+        }
       }
     </style>
     <title>Express Test</title>

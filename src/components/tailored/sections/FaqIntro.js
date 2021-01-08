@@ -1,12 +1,19 @@
 import React from "react";
-import SectionGrey from "../../generic/sections/SectionGrey";
+import SectionBlockColor from "../../generic/sections/SectionBlockColor";
+import Title from "../../generic/text/Title";
+import Text from "../../generic/text/Text";
+import { useTheme } from "@material-ui/styles";
 
 const FaqIntro = () => {
+  const theme = useTheme();
+
   return (
-    <SectionGrey>
-      <Title size="0">Frequently Asked Questions</Title>
-      Browse our frequently asked questions
-    </SectionGrey>
+    <SectionBlockColor bg={theme.palette.grey.light}>
+      <Title size="0" align="center">
+        Frequently Asked Questions
+      </Title>
+      <Text align="center">Browse our frequently asked questions</Text>
+    </SectionBlockColor>
   );
 };
 

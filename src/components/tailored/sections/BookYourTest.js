@@ -5,6 +5,7 @@ import GridItem from "../../generic/grids/GridItem";
 import ButtonPrimary from "../../generic/buttons/ButtonPrimary";
 import SectionDarkBg from "../../generic/sections/SectionDarkBg";
 import Text from "../../generic/text/Text";
+import Title from "../../generic/text/Title";
 
 const BookYourTest = () => {
   return (

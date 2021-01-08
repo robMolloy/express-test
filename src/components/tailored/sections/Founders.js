@@ -4,7 +4,9 @@ import SectionLightBg from "../../generic/sections/SectionLightBg";
 import Container from "../../generic/containers/Container";
 import GridColumnToRow from "../../generic/grids/GridColumnToRow";
 import Tablet from "../../generic/layouts/Tablet";
+
 import Text from "../../generic/text/Text";
+import Title from "../../generic/text/Title";
 
 const Founders = () => {
   return (

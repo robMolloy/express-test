@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 
 import GridColumnToRow from "../../generic/grids/GridColumnToRow";
+import FlexibleGrid from "../../generic/grids/FlexibleGrid";
 import Container from "../../generic/containers/Container";
 import SectionLightBg from "../../generic/sections/SectionLightBg";
 import Text from "../../generic/text/Text";
@@ -17,7 +18,7 @@ const BlogOverview = () => {
           Discover the latest from ExpressTest and news on the COVID-19 pandemic
           below.
           <br />
-          For any media enquires please contact our PR agency, Launch on
+          For any media enquires please contact our PR agency, Launch on{" "}
           <a href="expresstest@hellolaunch.co.uk">
             expresstest@hellolaunch.co.uk
           </a>
@@ -27,13 +28,13 @@ const BlogOverview = () => {
         <GridColumnToRow
           array={[
             <>
-              <img src="/media/gatwick_opening.jpg" alt="" />
+              <img src="media/gatwick_opening.jpg" alt="" />
               <div>
                 <Title size="1" align="center">
                   ExpressTest Launches at Gatwick Airport
                 </Title>
                 <small>
-                  <GridColumnToRow
+                  <FlexibleGrid
                     justify="space-between"
                     spacing={0}
                     array={[<>by Cignpost</>, <>on November 19th 2020</>]}
@@ -48,13 +49,13 @@ const BlogOverview = () => {
               </div>
             </>,
             <>
-              <img src="/media/girlgloves.png" alt="" />
+              <img src="media/girlgloves.png" alt="" />
               <div>
                 <Title size="1" align="center">
                   Tips to Stay Safe and Well this Winter
                 </Title>
                 <small>
-                  <GridColumnToRow
+                  <FlexibleGrid
                     justify="space-between"
                     spacing={0}
                     array={[<>by Cignpost</>, <>on November 19th 2020</>]}
@@ -69,13 +70,13 @@ const BlogOverview = () => {
               </div>
             </>,
             <>
-              <img src="/media/hometest.jpg" alt="" />
+              <img src="media/hometest.jpg" alt="" />
               <div>
                 <Title size="1" align="center">
                   ExpressTest Home Kits
                 </Title>
                 <small>
-                  <GridColumnToRow
+                  <FlexibleGrid
                     justify="space-between"
                     spacing={0}
                     array={[<>by Cignpost</>, <>on November 19th 2020</>]}
