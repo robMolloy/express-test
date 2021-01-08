@@ -6,7 +6,6 @@ import Container from "../../generic/containers/Container";
 import Title from "../../generic/text/TitleUnderline";
 import GridContainer from "../../generic/grids/GridContainer";
 import GridItem from "../../generic/grids/GridItem";
-import InnerContainer from "../../generic/containers/InnerContainer";
 
 const EventForm = () => {
   return (
