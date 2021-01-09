@@ -5,7 +5,6 @@ import Blogs from "../../pages/Blogs";
 import TestCentres from "../../pages/TestCentres";
 import Faqs from "../../pages/Faqs";
 import ContactUs from "../../pages/ContactUs";
-import Events from "../../pages/Events";
 
 const allListItems = [
   { order: "0", path: "home", name: "Home", component: Home },
@@ -26,7 +25,6 @@ const allListItems = [
 
   { order: "1", path: "faqs", name: "FAQ", component: Faqs },
   { order: "1", path: "contact_us", name: "Contact Us", component: ContactUs },
-  { order: "2", path: "events", name: "Events", component: Events },
 ];
 
 export default allListItems;
