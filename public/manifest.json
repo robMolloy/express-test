@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Express Test",
+  "name": "Express Test - Allow Me",
   "icons": [
     {
       "src": "favicon.ico",
