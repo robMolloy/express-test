@@ -13,7 +13,7 @@ import Home from "./components/pages/Home";
 
 import FooterBar from "./components/tailored/bars/FooterBar";
 import NavBars from "./components/tailored/bars/NavBars";
-import allListItems from "./components/tailored/bars/allListItems";
+import config from "./config";
 
 function App() {
   let HomePage;
@@ -26,12 +26,12 @@ function App() {
 
         <Route exact path="/" component={HomePage} />
         <Route exact path="/express-test" component={HomePage} />
-        {allListItems.map((listItem, j) => (
+        {config.pages.map((pagesData, j) => (
           <Route
             key={j}
             exact
-            path={`/${listItem.path}`}
-            component={listItem.component}
+            path={`/${pagesData.path}`}
+            component={pagesData.Component}
           />
         ))}
 
