@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "../../generic/navigation/Sidebar";
+import SideBar from "../../generic/navigation/SideBar";
 import HeaderBar from "../../generic/navigation/HeaderBar";
 
 const NavBars = (props = {}) => {
@@ -13,7 +13,7 @@ const NavBars = (props = {}) => {
     <>
       <HeaderBar imgSrc="media/ExpressTest-logo-01.svg" />
 
-      <Sidebar state={drawerState} toggleDrawer={toggleDrawer} />
+      <SideBar state={drawerState} toggleDrawer={toggleDrawer} />
     </>
   );
 };

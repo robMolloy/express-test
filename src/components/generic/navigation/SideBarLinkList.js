@@ -2,9 +2,9 @@ import React from "react";
 
 import MUIList from "@material-ui/core/List";
 
-import SidebarLink from "./SidebarLink";
+import SideBarLink from "./SideBarLink";
 
-const SidebarLinkList = (props = {}) => {
+const SideBarLinkList = (props = {}) => {
   let array;
   ({ array = [], ...props } = props);
 
@@ -13,10 +13,10 @@ const SidebarLinkList = (props = {}) => {
       {array.map((pageData, j) => {
         const { Icon, path, name } = pageData;
 
-        return <SidebarLink key={j} {...{ Icon, path, name }} />;
+        return <SideBarLink key={j} {...{ Icon, path, name }} />;
       })}
     </MUIList>
   );
 };
 
-export default SidebarLinkList;
+export default SideBarLinkList;

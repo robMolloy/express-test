@@ -4,7 +4,7 @@ import MUIDrawer from "@material-ui/core/Drawer";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import MUIDivider from "@material-ui/core/Divider";
 
-import SidebarLinkList from "./SidebarLinkList";
+import SideBarLinkList from "./SideBarLinkList";
 import config from "../../../config";
 
 const getGroupedPages = () => {
@@ -16,7 +16,7 @@ const getGroupedPages = () => {
   return rtn;
 };
 
-const Sidebar = (props = {}) => {
+const SideBar = (props = {}) => {
   let side, state, toggleDrawer;
   ({ side = "left", state, toggleDrawer, ...props } = props);
 
@@ -34,7 +34,7 @@ const Sidebar = (props = {}) => {
       >
         {groupedPages.map((pageGroup, j) => (
           <React.Fragment key={j}>
-            <SidebarLinkList {...{ toggleDrawer }} array={pageGroup} />
+            <SideBarLinkList {...{ toggleDrawer }} array={pageGroup} />
             {j === groupedPages.length - 1 ? "" : <MUIDivider />}
           </React.Fragment>
         ))}
@@ -43,4 +43,4 @@ const Sidebar = (props = {}) => {
   );
 };
 
-export default Sidebar;
+export default SideBar;

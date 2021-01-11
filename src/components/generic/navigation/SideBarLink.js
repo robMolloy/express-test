@@ -7,7 +7,7 @@ import MUIListItemText from "@material-ui/core/ListItemText";
 import MailIcon from "@material-ui/icons/Mail";
 import makeStyles from "@material-ui/styles/makeStyles";
 
-const SidebarLink = (props = {}) => {
+const SideBarLink = (props = {}) => {
   let Icon, path, name;
   ({ Icon = MailIcon, path, name, ...props } = props);
 
@@ -40,4 +40,4 @@ const SidebarLink = (props = {}) => {
   );
 };
 
-export default SidebarLink;
+export default SideBarLink;
