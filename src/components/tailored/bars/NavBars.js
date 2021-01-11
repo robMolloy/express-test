@@ -1,6 +1,7 @@
 import React from "react";
-import Drawer from "./Drawer";
+// import Drawer from "./Drawer";
 import Toolbar from "./Toolbar";
+import Sidebar from "../../generic/navigation/Sidebar";
 
 const NavBars = (props = {}) => {
   let drawerOpen;
@@ -12,7 +13,7 @@ const NavBars = (props = {}) => {
   return (
     <>
       <Toolbar toggleDrawer={toggleDrawer} />
-      <Drawer state={drawerState} toggleDrawer={toggleDrawer} />
+      <Sidebar state={drawerState} toggleDrawer={toggleDrawer} />
     </>
   );
 };
