@@ -12,7 +12,7 @@ import Home from "./components/pages/Home";
 // import ContactUs from "./components/pages/ContactUs";
 
 import FooterBar from "./components/tailored/bars/FooterBar";
-import NavBars from "./components/tailored/bars/NavBars";
+import NavBars from "./components/generic/navigation/NavBars";
 import config from "./config";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
   return (
     <Router basename={`${process.env.REACT_APP_PUBLIC_PATH}`}>
       <div className="App">
-        <NavBars />
+        <NavBars imgSrc="media/ExpressTest-logo-01.svg" />
 
         <Route exact path="/" component={HomePage} />
         <Route exact path="/express-test" component={HomePage} />
