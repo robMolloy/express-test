@@ -1,7 +1,6 @@
 import React from "react";
-// import Drawer from "./Drawer";
-import Toolbar from "./Toolbar";
 import Sidebar from "../../generic/navigation/Sidebar";
+import HeaderBar from "../../generic/navigation/HeaderBar";
 
 const NavBars = (props = {}) => {
   let drawerOpen;
@@ -12,7 +11,8 @@ const NavBars = (props = {}) => {
 
   return (
     <>
-      <Toolbar toggleDrawer={toggleDrawer} />
+      <HeaderBar imgSrc="media/ExpressTest-logo-01.svg" />
+
       <Sidebar state={drawerState} toggleDrawer={toggleDrawer} />
     </>
   );
