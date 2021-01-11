@@ -11,7 +11,7 @@ const NavBars = (props = {}) => {
 
   return (
     <>
-      <HeaderBar imgSrc={imgSrc} />
+      <HeaderBar imgSrc={imgSrc} toggleDrawer={toggleDrawer} />
 
       <SideBar state={drawerState} toggleDrawer={toggleDrawer} />
     </>
