@@ -13,7 +13,7 @@ import Home from "./components/pages/Home";
 
 import FooterBar from "./components/tailored/bars/FooterBar";
 import NavBars from "./components/generic/navigation/NavBars";
-import config from "./config";
+import AllRoutes from "./components/generic/navigation/AllRoutes";
 
 function App() {
   let HomePage;
@@ -26,24 +26,9 @@ function App() {
 
         <Route exact path="/" component={HomePage} />
         <Route exact path="/express-test" component={HomePage} />
-        {config.pages.map((pagesData, j) => (
-          <Route
-            key={j}
-            exact
-            path={`/${pagesData.path}`}
-            component={pagesData.Component}
-          />
-        ))}
 
-        {/* 
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/how_it_works" component={HowItWorks} />
-          <Route exact path="/news" component={Blogs} />
-          <Route exact path="/test_centres" component={TestCentres} />
-          <Route exact path="/faqs" component={Faqs} />
-          <Route exact path="/contact_us" component={ContactUs} /> 
-        */}
+        <AllRoutes />
+
         <FooterBar />
       </div>
     </Router>
